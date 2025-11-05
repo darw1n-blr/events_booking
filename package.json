@@ -1,0 +1,23 @@
+{
+  "name": "events-booking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npx ts-node -r tsconfig-paths/register api/src/main.ts\" \"npx ts-node -r tsconfig-paths/register booking/src/main.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "api",
+    "booking",
+    "shared"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
