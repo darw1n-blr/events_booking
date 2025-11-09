@@ -13,7 +13,7 @@ async function bootstrap() {
     }),
   );
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 3008;
   await app.listen(port);
   console.log(`API Service running on http://localhost:${port}`);
 }

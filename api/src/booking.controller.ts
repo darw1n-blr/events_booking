@@ -18,6 +18,11 @@ export class BookingController {
     return await this.appService.getBookings();
   }
 
+  @Get('top')
+  async getTopUsers() {
+    return await this.appService.getTopUsers();
+  }
+
 
 }
 
